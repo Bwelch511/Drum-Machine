@@ -1,0 +1,58 @@
+:root {
+    --light: rgb(233, 226, 136);
+    --dark: rgb(128, 96, 24);
+    --primary: rgb(35, 221, 35);
+    --secondary: rgb(47, 98, 169);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+#drum-machine {
+    width: 50%;
+    height: 50%;
+    background-color: var(--primary);
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    border: 1px solid;
+    display: flex;
+    
+}
+#display{
+    border: 3px solid;
+    width: 25%;
+    order: 2;
+}
+#key-container {
+    width: 75%;
+    order: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: var(--dark);
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+}
+#txt {
+    border-bottom: 3px solid black;
+    margin: auto;
+    width: 12.5vw;
+    height: 5vh;
+    background-color: grey;
+    color: white;
+}
+.drum-pad {
+    background-color: var(--light);
+    border-radius: 15%;
+    box-shadow: 2px 5px 0px black;
+}
+.drum-pad:hover{
+    background-color:  rgb(253, 248, 188);
+    box-shadow: 2px 5px 0px rgb(50, 50, 50);
+}
+
